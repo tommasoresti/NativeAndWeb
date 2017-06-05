@@ -45,4 +45,3 @@ npm run ios-dev
 ```
 npm run web-dev
 ```
-*dopo collegatevi a localhost:3001*
