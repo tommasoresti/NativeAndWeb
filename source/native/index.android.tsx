@@ -1,7 +1,7 @@
 import {AppRegistry, StyleSheet, View} from 'react-native';
 import React from 'react'
 import color from '../common/resource/color'
-import {Main} from "./component/main";
+import {Main} from "./component/Main";
 
 export interface Props {}
 export interface State {}

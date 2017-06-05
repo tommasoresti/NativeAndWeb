@@ -35,7 +35,7 @@ export default class Main extends React.Component<Props, State> implements MainV
   render(): JSX.Element | any {
     return (
       <div>
-        {this.state.appName}: {this.state.text}
+        [Web] {this.state.appName}: {this.state.text}
       </div>
     );
   }

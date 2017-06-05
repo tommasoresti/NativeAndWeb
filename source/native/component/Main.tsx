@@ -36,7 +36,7 @@ export class Main extends React.Component<Props, State> implements MainView {
   render() {
     return (
       <View>
-        <Text>{this.state.appName}{"\n"}{this.state.text}</Text>
+        <Text>[Native] {this.state.appName}{"\n"}{this.state.text}</Text>
       </View>
     )
   }
