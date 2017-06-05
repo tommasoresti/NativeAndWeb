@@ -22,16 +22,21 @@ Prima di tutto è importante scaricare tutte le **dipendenze**. Per fare questo 
 npm i
 ```
 
+
+Per avviare iOS o Android in debug è necessario 
+
 ### iOS ###
 
 ```
+npm run start
 npm run ios-dev
 ```
 
 ### Android ###
 *dovete scaricare le sdk di android*
 ```
-npm run android-dev
+npm run start
+npm run ios-dev
 ```
 
 
