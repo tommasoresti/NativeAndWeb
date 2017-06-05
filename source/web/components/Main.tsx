@@ -2,7 +2,8 @@ import React from 'react';
 import {MainPresenter, MainView} from "../../common/presenter/MainPresenter";
 
 export interface State {
-  text
+  appName: string
+  text: string
 }
 export interface Props { }
 
@@ -10,7 +11,8 @@ export default class Main extends React.Component<Props, State> implements MainV
 
   presenter: MainPresenter;
   state: State = {
-    text : ""
+    text : "",
+    appName: ""
   };
 
   componentDidMount(): void {
@@ -22,6 +24,10 @@ export default class Main extends React.Component<Props, State> implements MainV
     this.presenter.onStop()
   }
 
+  showAppName(appName: string) {
+    this.setState({appName: appName})
+  }
+
   showText(text: string) {
     this.setState({text: text})
   }
@@ -29,7 +35,7 @@ export default class Main extends React.Component<Props, State> implements MainV
   render(): JSX.Element | any {
     return (
       <div>
-        WebView: {this.state.text}
+        {this.state.appName}: {this.state.text}
       </div>
     );
   }
