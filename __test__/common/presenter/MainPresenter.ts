@@ -1,4 +1,4 @@
-import {MainPresenter, MainView} from "../source/common/presenter/MainPresenter";
+import {MainPresenter, MainView} from "../../../source/common/presenter/MainPresenter";
 
 describe("a simple suite", () => {
 
