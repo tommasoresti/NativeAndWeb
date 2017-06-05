@@ -17,7 +17,7 @@ export class MainPresenter extends Presenter<MainView> {
     this.view.showAppName(Strings.appName)
 
     let handler = () => {
-      this.view.showText("Presenter works!")
+      this.view.showText("It works!")
     };
     setTimeout(handler, 1000)
   }

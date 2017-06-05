@@ -35,8 +35,8 @@ export class Main extends React.Component<Props, State> implements MainView {
 
   render() {
     return (
-      <View style={{width: "100%", flex: 1}}>
-        <Text style={{marginTop: 20}}>{this.state.appName}: {this.state.text}</Text>
+      <View>
+        <Text>{this.state.appName}{"\n"}{this.state.text}</Text>
       </View>
     )
   }
