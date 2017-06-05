@@ -14,7 +14,6 @@ describe("a simple suite", () => {
     presenter.onStart()
     expect(view.showAppNameCalled(1)).toBe(true)
   })
-
 })
 
 class MockMainView implements MainView {
