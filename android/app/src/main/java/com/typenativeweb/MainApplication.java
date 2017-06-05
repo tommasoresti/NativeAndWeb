@@ -28,6 +28,11 @@ public class MainApplication extends Application implements ReactApplication {
   };
 
   @Override
+  protected String getJSMainModuleName() {
+    return "artifacts/native/" + super.getJSMainModuleName();
+  }
+
+  @Override
   public ReactNativeHost getReactNativeHost() {
     return mReactNativeHost;
   }
