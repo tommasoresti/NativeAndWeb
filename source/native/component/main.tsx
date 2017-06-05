@@ -5,14 +5,12 @@ import {Text, View} from "react-native";
 export interface Props {}
 export interface State {
   text: string
-  items: string[]
 }
 
 export class Main extends React.Component<Props, State> implements MainView {
 
   state: State = {
-    text: "",
-    items: []
+    text: ""
   }
   presenter: MainPresenter;
 
