@@ -13,8 +13,8 @@ https://www.npmjs.com/get-npm
 npm install -g react-native-cli
 ```
 
-* a Mac to run the iOS project
-* Android SDK to run the Android project
+* a **Mac** to run the **iOS project**
+* **Android SDK** to run the **Android project**
 
 ## Startup: ##
 
