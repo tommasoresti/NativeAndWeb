@@ -1,4 +1,4 @@
-## Requisiti: ##
+## Requierements: ##
 
 * **npm**
 
@@ -13,17 +13,16 @@ https://www.npmjs.com/get-npm
 npm install -g react-native-cli
 ```
 
+* a **Mac** and **xCode** to run the **iOS project**
+* **Android SDK** to run the **Android project**
 
-## Avvio del progetto: ##
+## Startup: ##
 
-Prima di tutto è importante scaricare tutte le **dipendenze**. Per fare questo andate nella cartella del progetto e digitate il comando:
+Download project **dependencies** with npm. From the root directory type the command:
 
 ```
 npm i
 ```
-
-
-Per avviare iOS o Android in debug è necessario 
 
 ### iOS ###
 
@@ -33,12 +32,11 @@ npm run ios-dev
 ```
 
 ### Android ###
-*dovete scaricare le sdk di android*
+
 ```
 npm run start
 npm run ios-dev
 ```
-
 
 ### Web ###
 
