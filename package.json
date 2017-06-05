@@ -25,6 +25,7 @@
     "@types/jest": "^19.2.3",
     "@types/react": "^15.0.25",
     "@types/react-native": "^0.44.5",
+    "typemoq": "^1.7.0",
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-plugin-react-transform": "^2.0.2",
@@ -43,6 +44,10 @@
     "jest-preset-typescript-react-native": "^1.0.1"
   },
   "jest": {
-    "preset": "jest-preset-typescript-react-native"
+    "preset": "jest-preset-typescript-react-native",
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)(spec|test).ts?(x)"
+    ]
   }
 }
