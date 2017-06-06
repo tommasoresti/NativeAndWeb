@@ -25,7 +25,7 @@ const styles: any = StyleSheet.create({
   },
 });
 
-export default class Appetitoso extends React.Component<Props, State>{
+export default class TypeNativeWeb extends React.Component<Props, State>{
   render() {
     return (
       <View style={styles.container}>
@@ -35,4 +35,4 @@ export default class Appetitoso extends React.Component<Props, State>{
   }
 }
 
-AppRegistry.registerComponent('Appetitoso', () => Appetitoso);
+AppRegistry.registerComponent('TypeNativeWeb', () => TypeNativeWeb);
