@@ -1,7 +1,7 @@
 import {AppRegistry, StyleSheet, View} from 'react-native';
 import React from 'react'
 import color from '../common/resource/color'
-import {Main} from "./component/Main";
+import {Main} from "native/component/Main";
 
 export interface Props {}
 export interface State {}
@@ -12,27 +12,17 @@ const styles: any = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: color.background,
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 16,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+  }
 });
 
-export default class Appetitoso extends React.Component<Props, State>{
+export default class TypeNativeWeb extends React.Component<Props, State>{
   render() {
     return (
       <View style={styles.container}>
-        <Main />
+        <Main/>
       </View>
     );
   }
 }
 
-AppRegistry.registerComponent('Appetitoso', () => Appetitoso);
+AppRegistry.registerComponent('TypeNativeWeb', () => TypeNativeWeb);
