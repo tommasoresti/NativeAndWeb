@@ -1,7 +1,6 @@
-import {AppRegistry, StyleSheet, View} from 'react-native';
+import {AppRegistry, StyleSheet, Text, View} from 'react-native';
 import React from 'react'
 import color from '../common/resource/color'
-import {Main} from "native/component/Main";
 
 export interface Props {}
 export interface State {}
@@ -19,7 +18,7 @@ export default class TypeNativeWeb extends React.Component<Props, State>{
   render() {
     return (
       <View style={styles.container}>
-        <Main/>
+        <Text>Hello Android</Text>
       </View>
     );
   }
