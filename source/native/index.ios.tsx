@@ -1,6 +1,8 @@
 import {AppRegistry, StyleSheet, Text, View} from 'react-native';
 import React from 'react'
 import color from '../common/resource/color'
+import FruitList from "./FruitList";
+import {JSFruitRepository} from "../common/interactor/FruitRepository";
 
 export interface Props {}
 export interface State {}
@@ -19,6 +21,7 @@ export default class TypeNativeWeb extends React.Component<Props, State>{
     return (
       <View style={styles.container}>
         <Text>Hello IOS</Text>
+        <FruitList repository={new JSFruitRepository()}/>
       </View>
     );
   }
