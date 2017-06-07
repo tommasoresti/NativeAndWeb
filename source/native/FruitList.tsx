@@ -43,7 +43,7 @@ export default class FruitList extends React.Component<P, S> implements FruitLis
 
     let rows = [];
     for (let fruit of this.state.fruits) {
-      rows.push(<Text key={fruit.name}>{fruit.name}</Text>)
+      rows.push(<Text key={fruit.name} style={{color: fruit.color}}>{fruit.name}</Text>)
     }
 
     return (
