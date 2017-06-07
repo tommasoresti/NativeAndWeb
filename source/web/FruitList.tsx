@@ -2,9 +2,6 @@ import * as React from "react";
 import {FruitListPresenter, FruitListView} from "../common/presenter/FruitListPresenter";
 import Fruit from "../common/model/Fruit";
 import {FruitRepository} from "../common/interactor/FruitRepository";
-/**
- * Created by tresti on 06.06.17.
- */
 
 export interface P {repository: FruitRepository}
 export interface S {
