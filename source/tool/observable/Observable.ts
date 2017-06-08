@@ -1,17 +1,19 @@
-/**
- * Created by tresti on 06.06.17.
- */
+
 export default class Observable<T> {
-  callback: (value: T) => void;
-  private value: T;
+  callback: (value: T) => void = null;
+  private value: T = null;
 
   onReady(callback: (value: T) => void) {
     this.callback = callback
+    if(this.value != null) {
+      this.callback(this.value)
+    }
   }
 
   setValue(value: T) {
     console.log(value);
     this.value = value;
-    this.callback(value)
+    if(this.callback != null)
+      this.callback(value)
   }
 }

@@ -1,7 +1,7 @@
 import React      from 'react';
 import { render } from 'react-dom';
 import FruitList from "./FruitList";
-import {JSFruitRepository} from "../common/interactor/FruitRepository";
+import {JSFruitRepository} from "../common/interactor/implementation/JSFruitRepository";
 
 const rootElement = document.getElementById('root');
 
