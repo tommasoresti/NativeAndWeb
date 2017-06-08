@@ -16,17 +16,13 @@ export class FruitListPresenter {
     this.repository = repository;
   }
 
-  onStart() {
-    this.onNoFilters()
-  }
-
-  onNoFilters() {
+  onNoFilterSet() {
     this.repository.getAll().onReady((fruits) => {
       this.view.showFruit(fruits)
     })
   }
 
-  onFilterForColor(color: string) {
+  onFilterForColorSet(color: string) {
     this.repository.getByColor(color).onReady((fruits) => {
       this.view.showFruit(fruits)
     })

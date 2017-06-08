@@ -1,6 +1,8 @@
 import {AppRegistry, StyleSheet, Text, View} from 'react-native';
 import React from 'react'
 import color from '../common/resource/color'
+import InMemoryFruitRepository from "../common/interactor/implementation/InMemoryFruitRepository";
+import FruitList from "./FruitList";
 
 export interface Props {}
 export interface State {}
@@ -19,6 +21,7 @@ export default class TypeNativeWeb extends React.Component<Props, State>{
     return (
       <View style={styles.container}>
         <Text>Hello Android</Text>
+        <FruitList repository={new InMemoryFruitRepository()}/>
       </View>
     );
   }

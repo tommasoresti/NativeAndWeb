@@ -18,7 +18,7 @@ export default class FruitList extends React.Component<P, S> implements FruitLis
 
   componentDidMount() {
     this.presenter = new FruitListPresenter(this, this.props.repository)
-    this.presenter.onNoFilters()
+    this.presenter.onNoFilterSet()
   }
 
   showFruit(fruits: Fruit[]) {
@@ -29,10 +29,10 @@ export default class FruitList extends React.Component<P, S> implements FruitLis
     let newState = !this.state.filter;
     this.setState({ filter: newState });
     if(newState) {
-      this.presenter.onFilterForColor("red")
+      this.presenter.onFilterForColorSet("red")
     }
     else {
-      this.presenter.onNoFilters()
+      this.presenter.onNoFilterSet()
     }
   }
 
